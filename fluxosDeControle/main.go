@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"controles/if-else"
 	"controles/forLace"
+	"controles/switchcase"
 )
 
 func main() {
@@ -29,4 +30,20 @@ func main() {
 
 	fmt.Println("\n=== Impressão de Números ===")
 	forLace.PrintNumbers()
+
+	day := 3 
+	fmt.Println("\n=== Verificação de Dia da Semana ===")
+	fmt.Printf("Dia (número): %d\n", day)
+	switchcase.PrintDayOfWeek(day)
+
+	fruit := "banana"
+	fmt.Println("\n=== Verificação de Cor da Fruta ===")
+	fmt.Printf("Fruta: %s\n", fruit)
+	switchcase.PrintFruitColor(fruit)
+	
+	month := 5
+	fmt.Println("\n=== Verificação de Mês do Ano ===")
+	fmt.Printf("Mês: %d\n", month)
+	switchcase.PrintMonthName(month)
+	fmt.Println("\nFim do programa")
 }
